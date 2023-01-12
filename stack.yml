@@ -8,6 +8,8 @@ services:
     restart: always
     environment:
       POSTGRES_PASSWORD: example
+    ports:
+      - 9999:5432
 
   adminer:
     image: adminer
